@@ -4,8 +4,7 @@
  */
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  *
@@ -25,7 +24,7 @@ public class DataOp {
             if(r.getBandName().toLowerCase().contains(data.toLowerCase())) this.filtered.add(r);
         }
         if(!this.filtered.isEmpty()) return this.filtered;
-        return null;
+        return Collections.emptyList();
     }
     
     public List<Release> searchByYear(String data, List<Release> list) throws Exception {
@@ -34,7 +33,7 @@ public class DataOp {
             if(String.valueOf(r.getReleaseDate()).equals(data.trim())) this.filtered.add(r);
         }
         if(!this.filtered.isEmpty()) return this.filtered;
-        return null;
+        return Collections.emptyList();
     }
     
     public List<Release> searchByRating(String data, List<Release> list) throws Exception{
@@ -43,7 +42,7 @@ public class DataOp {
             if(String.valueOf(r.getRating()).equals(data.trim())) this.filtered.add(r);
         }
         if(!this.filtered.isEmpty()) return this.filtered;
-        return null;
+        return Collections.emptyList();
     }
     
     public List<Release> searchByYearNRating(String data, List<Release> list) throws Exception {
@@ -56,7 +55,7 @@ public class DataOp {
                 this.filtered.add(r);
         }
         if(!this.filtered.isEmpty()) return this.filtered;
-        return null;
+        return Collections.emptyList();
     }
     
     public int getAverageRatingByYear(String data, List<Release> list) throws Exception {
@@ -82,7 +81,7 @@ public class DataOp {
                 this.filtered.add(r);
         }
         if(!this.filtered.isEmpty()) return this.filtered;
-        return null;
+        return Collections.emptyList();
         
     }
 
@@ -98,7 +97,7 @@ public class DataOp {
             }
         }
         if(!this.filtered.isEmpty()) return this.filtered;
-        return null;
+        return Collections.emptyList();
     }
     
     public List<Release> getFiltered() {

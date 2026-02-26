@@ -1,0 +1,3 @@
+Main-Class: gestor.MainApp
+Class-Path: lib/jakarta.xml.bind-api.jar lib/jaxb-impl.jar lib/jakarta.activation.jar
+
