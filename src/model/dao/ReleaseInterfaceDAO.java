@@ -6,6 +6,6 @@ import java.util.*;
 public interface ReleaseInterfaceDAO {
 
 	List<Release> getAll();
-	void saveAll(List<Release> releases);
+	void saveAll(String filename, List<Release> releases);
 
 }

@@ -6,7 +6,7 @@ import jakarta.xml.bind.*;
 import java.util.*;
 import java.io.File;
 
-public class ReleaseDAO {
+public class ReleaseDAO implements ReleaseInterfaceDAO {
 
 	JAXBContext jaxbContext = null;
 	ReleaseList releaseList = null;
