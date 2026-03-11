@@ -4,7 +4,6 @@ BIN = build/classes
 LIB = "dist/lib/jakarta.xml.bind-api.jar:dist/lib/jaxb-impl.jar"
 SOURCES = @sources.txt
 MANIFEST = manifest.txt
-SRC_DIR = src
 JAR_NAME = dist/RYMViewer.jar
 
 all: clean compile jar run
